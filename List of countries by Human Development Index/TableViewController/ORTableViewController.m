@@ -54,9 +54,9 @@
     
     ORCountry* country=self.countryList.countryArray[indexPath.section][indexPath.row];
     
-        [cell.countryName setText:[country.countryNameLocalNameCapitalName objectForKey:@"Country"]];
-        [cell.countryISO setText: [country.countryNameLocalNameCapitalName objectForKey:@"ISO"]];
-        [cell.capitalName setText: [country.countryNameLocalNameCapitalName objectForKey:@"Capital"]];
+        [cell.countryName setText:[country.countryNameLocalNameCapitalName objectForKey:ORCountryListCountryKey]];
+        [cell.countryISO setText: [country.countryNameLocalNameCapitalName objectForKey:ORCountryListISOKey]];
+        [cell.capitalName setText: [country.countryNameLocalNameCapitalName objectForKey:ORCountryListCapitalKey]];
         [cell.cellImage setImage:country.countryFlag];
  
     return cell;
@@ -65,7 +65,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     ORCountry* country=self.countryList.countryArray[section][0];
-    return [country.countryNameLocalNameCapitalName objectForKey:@"Continent"];
+    return [country.countryNameLocalNameCapitalName objectForKey:ORCountryListContinentKey];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

@@ -8,6 +8,12 @@
 
 #import "ORCountryList.h"
 
+
+NSString * const ORCountryListCountryKey=@"Country";
+NSString * const ORCountryListCapitalKey=@"ISO";
+NSString * const ORCountryListISOKey=@"ISO";
+NSString * const ORCountryListContinentKey=@"Continent";
+
 @implementation ORCountryList
 @synthesize countryArray=_countryArray;
 
@@ -85,7 +91,7 @@
                                                            details:@"Canada is a country, consisting of ten provinces and three territories, in the northern part of the continent of North America. It extends from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres (3.85 million square miles) in total, making it the world's second-largest country by total area and the fourth-largest country by land area. Canada's common border with the United States forms the world's longest land border."]];
         
         NSDictionary* singapore=[NSDictionary dictionaryWithObjectsAndKeys:
-                                 @"Singapore",@"Coutry",
+                                 @"Singapore",@"Country",
                                @"SG",@"ISO",
                                @"Singapore",@"Capital",
                              @"Asia",@"Continent",nil];

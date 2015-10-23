@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "ORCountry.h"
 
+
+extern NSString * const ORCountryListCountryKey;
+extern NSString * const ORCountryListCapitalKey;
+extern NSString * const ORCountryListISOKey;
+extern NSString * const ORCountryListCapitalKey;
+extern NSString * const ORCountryListContinentKey;
+
 @interface ORCountryList : NSObject
 @property (nonatomic,strong) NSMutableArray* countryArray;
 
